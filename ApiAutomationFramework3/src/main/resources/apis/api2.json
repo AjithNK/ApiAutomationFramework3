@@ -1,0 +1,8 @@
+{
+"requestType":"post",
+"requestApiPath":"/api/users",
+"requestBody":{
+    "name": "morpheus",
+    "job": "leader"
+}
+}

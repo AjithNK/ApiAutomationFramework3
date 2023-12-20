@@ -1,78 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1174" started-at="2023-12-19T21:00:53 IST" finished-at="2023-12-19T21:00:54 IST">
+  <suite name="Default suite" duration-ms="1842" started-at="2023-12-20T21:11:35 IST" finished-at="2023-12-20T21:11:37 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@2eda0940]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="1174" started-at="2023-12-19T21:00:53 IST" finished-at="2023-12-19T21:00:54 IST">
+    <test name="Default test" duration-ms="1842" started-at="2023-12-20T21:11:35 IST" finished-at="2023-12-20T21:11:37 IST">
       <class name="runner.RunCucumberTest">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCucumberTest@2eda0940]" name="setUpClass" is-config="true" duration-ms="876" started-at="2023-12-19T21:00:53 IST" finished-at="2023-12-19T21:00:54 IST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="setUpClass" is-config="true" duration-ms="1366" started-at="2023-12-20T21:11:35 IST" finished-at="2023-12-20T21:11:36 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@45ca843]]>
+                <![CDATA[org.testng.TestRunner@64a1923a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@2eda0940]" name="runScenario" duration-ms="161" started-at="2023-12-19T21:00:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-19T21:00:54 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="188" started-at="2023-12-20T21:11:36 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-20T21:11:36 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify integer addition is working fine -second scenario"]]>
+                <![CDATA["Create a user"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify mathematical operations"]]>
+                <![CDATA["Verify the create user"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@2eda0940]" name="runScenario" duration-ms="161" started-at="2023-12-19T21:00:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-19T21:00:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify integer addition is working fine"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify mathematical operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@2eda0940]" name="runScenario" duration-ms="161" started-at="2023-12-19T21:00:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-19T21:00:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify integer addition is working fine -second scenario"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify mathematical operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCucumberTest@2eda0940]" name="tearDownClass" is-config="true" duration-ms="14" started-at="2023-12-19T21:00:54 IST" finished-at="2023-12-19T21:00:54 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="tearDownClass" is-config="true" duration-ms="213" started-at="2023-12-20T21:11:36 IST" finished-at="2023-12-20T21:11:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="afterSuite" is-config="true" duration-ms="3424" started-at="2023-12-20T21:11:37 IST" finished-at="2023-12-20T21:11:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- runner.RunCucumberTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -33,18 +33,22 @@ public class APIHelper {
 			
 		}
 		
-/*		else if(apiRequest.getRequestType().equalsIgnoreCase("put")) {
-			
+		else if(apiRequest.getRequestType().equalsIgnoreCase("put")) {
+			request.body(apiRequest.getRequestBody());
+			response= request.put(apiRequest.getApiPath());
 		}
 		
 		else if(apiRequest.getRequestType().equalsIgnoreCase("patch")) {
 			
+			request.body(apiRequest.getRequestBody());
+			response = request.patch(apiRequest.getApiPath());
 			
 		}
 		
 		else if(apiRequest.getRequestType().equalsIgnoreCase("delete")) {
+			response = request.delete(apiRequest.getApiPath());
 			
-		}  */
+		} 
 		return response;
 	}
 

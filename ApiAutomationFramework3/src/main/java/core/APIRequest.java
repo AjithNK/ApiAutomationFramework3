@@ -6,13 +6,15 @@ import java.util.Map.Entry;
 
 import org.json.simple.JSONObject;
 
+@SuppressWarnings("unchecked")
 public class APIRequest {
 
-	public String requestType;  			 //GET OR POST OR PUT OR PATCH
+	public String requestType;  			 //GET OR POST OR PUT OR PATCH OR DELETE
 	public String apiPath; 					 //ENDPOINT
 	public HashMap<String, String> headers;  //HEADERS
-	public JSONObject requestBody;  	     //REQUEST BDODY 
+	public JSONObject requestBody;  	     //REQUEST BODY 
 
+	
 	public String getRequestType() {
 		return requestType;
 	}
@@ -46,61 +48,68 @@ public class APIRequest {
 	}
 
 	
-	//Constructor called for get request
+	//Constructor called for GET OR DELETE request for which the details are hard-coded
 	public APIRequest(String requestType, String apiPath) {
+		
 		super();
 		this.requestType = requestType;
 		this.apiPath = apiPath;
+		
 	}
 	
 	
-	
-	//Constructor called for post request
+	//Constructor called for POST OR PUT OR PATCH request for which the details are passed as 4 arguments
 	public APIRequest(String requestType, String apiPath, HashMap<String, String> headers, JSONObject requestBody) {
+		
 		super();
 		this.requestType = requestType;
 		this.apiPath = apiPath;
 		this.headers = headers;
 		this.requestBody = requestBody;
+		
 	}
 	
 	
-	//Constructor called for any request for which the details are passed from external json file
+	//Constructor called for ANY request for which the details are passed from external json file
 	public APIRequest(String filepath) {
-		  JsonProcessor obj=new JsonProcessor();
-		  JSONObject jsonObject=obj.readFromJsonFile(filepath);
+
+		  JSONObject jsonObject=JsonProcessor.readFromJsonFile(filepath);
 		  
 		  this.requestType=(String) jsonObject.get("requestType");
 		  this.apiPath=(String) jsonObject.get("requestApiPath");
 		  
-		  if(requestType.equalsIgnoreCase("post")) {
-			  this.requestBody = (JSONObject) jsonObject.get("requestBody");
-		  }
 		  
 		  if(jsonObject.containsKey("headers")) {
-			 this.headers =(HashMap<String, String>) jsonObject.get("headers");
+			  this.headers =(HashMap<String, String>) jsonObject.get("headers");
 		  }
-		  	 
+		  
+		  if(requestType.equalsIgnoreCase("post")|| requestType.equalsIgnoreCase("put") || requestType.equalsIgnoreCase("patch")) {
+			  this.requestBody = (JSONObject) jsonObject.get("requestBody");
+		  }
+		  	   	 
 	}
 	
-	//Constructor called for post request for which the details are passed from external json file 
-	// & request body passed as a hashmap
+	
+	//Constructor called for POST request for which 
+	//the details are passed from external json file & request body passed as a hashMap
 	public APIRequest(String filepath,HashMap<String,String>metaInfo) {
-		  JsonProcessor obj=new JsonProcessor();
-		  JSONObject jsonObject=obj.readFromJsonFile(filepath);
+		  
+		  JSONObject jsonObject=JsonProcessor.readFromJsonFile(filepath);
 		  
 		  this.requestType=(String) jsonObject.get("requestType");
 		  this.apiPath=(String) jsonObject.get("requestApiPath");
 		  
-		  if(requestType.equalsIgnoreCase("post")) {
+		  if(jsonObject.containsKey("headers")) {
+			  
+			  this.headers =(HashMap<String, String>) jsonObject.get("headers");
+		  }
+		  
+		  if(requestType.equalsIgnoreCase("post")||requestType.equalsIgnoreCase("put")||requestType.equalsIgnoreCase("patch")) {
 			  this.requestBody = (JSONObject) jsonObject.get("requestBody");
 			  this.requestBody=orchestrateRequest(requestBody,metaInfo);
-			  System.out.println(requestBody.toString());
+			
 		  }
-		  
-		  if(jsonObject.containsKey("headers")) {
-			 this.headers =(HashMap<String, String>) jsonObject.get("headers");
-		  }
+		   
 		  	 
 	}
 
@@ -117,32 +126,27 @@ public class APIRequest {
 		           if(it.getValue().toString().contains("%s")){
 		               String metaKey = it.getValue().toString().split(",")[1];
 		               
-		               /*     if(this.metaInfo.containsKey(metaKey)) {
+		                   if(metaInfo.containsKey(metaKey)) {
 		                  String toBeReplaced = metaInfo.get(metaKey);
 		                   requestBody.put(it.getKey().split("#")[1],toBeReplaced);
 		                   requestBody.remove(it.getKey());
-		               }*/
+		               }
 		           }
 		           if(it.getValue().toString().contains("%d")){
 		               String metaKey = it.getValue().toString().split(",")[1];
-		     /*          if(this.metaInfo.containsKey(metaKey)) {
+		              if(metaInfo.containsKey(metaKey)) {
 		                   int toBeReplaced = Integer.parseInt(metaInfo.get(metaKey));
 		                   requestBody.put(it.getKey().split("#")[1],toBeReplaced);
 		                   requestBody.remove(it.getKey());
-		               }*/
+		               }
 		           } 
 		           
-		           /*
-		            * Need to orchestrate for Int, json, decimal etc
-		            * Also for multiple replacer for single json attribute
-		            */
 		       }
-
-
+		       
 		   }
+		   
 		   return requestBody;
 		}
 	
-
 
 }

@@ -1,8 +1,8 @@
 package requestPojo;
 
-public class RequestPojoPost {
+public class RequestPojoPut {
 	
-	public String name;
+    public String name;
     public String job;
     
     
@@ -18,10 +18,8 @@ public class RequestPojoPost {
 	public void setJob(String job) {
 		this.job = job;
 	}
+    
 	
-	
-	// Here we are overriding the toString() method so that we get the output as how we require.
-	// i.e here we require output in json format, so that we write the code such that this method returns a json string
 	public String toString() {
 
 		return "{\r\n"
@@ -31,6 +29,6 @@ public class RequestPojoPost {
 		
 		
 	}
-	
+    
 
 }

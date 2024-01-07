@@ -1,0 +1,13 @@
+{
+	
+	"requestType":"post",
+	"requestApiPath":"https://reqres.in/api/register/6",
+	"requestBody":
+					{
+						"email": "eve.holt@reqres.in",
+						"password": "pistol"
+		
+					}
+	
+	
+}

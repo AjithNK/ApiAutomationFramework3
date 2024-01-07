@@ -1,0 +1,8 @@
+{
+"requestType":"put",
+"requestApiPath":"/api/users/2",
+"requestBody":{
+    "name": "james",
+    "job": "cleaner"
+}
+}

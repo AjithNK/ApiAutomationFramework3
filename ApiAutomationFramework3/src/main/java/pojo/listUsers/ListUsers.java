@@ -1,22 +1,17 @@
-package pojo;
+package pojo.listUsers;
 
 import java.util.ArrayList;
 
-public class ListUser {
+public class ListUsers {
 
 	public int page;
 	public int per_page;
 	public int total;
 	public int total_pages;
-	public ArrayList<Datum> data;
+	public ArrayList<Data> data;
 	public Support support;
-	/*
-	 * public int test;
-	 * 
-	 * public int getTest() { return test; }
-	 * 
-	 * public void setTest(int test) { this.test = test; }
-	 */
+
+	
 
 	public int getPage() {
 		return page;
@@ -50,11 +45,11 @@ public class ListUser {
 		this.total_pages = total_pages;
 	}
 
-	public ArrayList<Datum> getData() {
+	public ArrayList<Data> getData() {
 		return data;
 	}
 
-	public void setData(ArrayList<Datum> data) {
+	public void setData(ArrayList<Data> data) {
 		this.data = data;
 	}
 

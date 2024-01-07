@@ -1,0 +1,13 @@
+{
+	
+	"requestType":"put",
+	"requestApiPath":"https://reqres.in/api/users/2",
+	"requestBody":
+					{
+						"name": "Rakesh",
+						"job": "QA Automation"
+		
+					}
+	
+	
+}

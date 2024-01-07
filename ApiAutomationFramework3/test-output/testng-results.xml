@@ -1,47 +1,431 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="25" passed="25">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1842" started-at="2023-12-20T21:11:35 IST" finished-at="2023-12-20T21:11:37 IST">
+  <suite name="Default suite" duration-ms="7040" started-at="2024-01-08T01:17:54 IST" finished-at="2024-01-08T01:18:01 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="1842" started-at="2023-12-20T21:11:35 IST" finished-at="2023-12-20T21:11:37 IST">
+    <test name="Default test" duration-ms="7040" started-at="2024-01-08T01:17:54 IST" finished-at="2024-01-08T01:18:01 IST">
       <class name="runner.RunCucumberTest">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="setUpClass" is-config="true" duration-ms="1366" started-at="2023-12-20T21:11:35 IST" finished-at="2023-12-20T21:11:36 IST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="setUpClass" is-config="true" duration-ms="806" started-at="2024-01-08T01:17:54 IST" finished-at="2024-01-08T01:17:55 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@64a1923a]]>
+                <![CDATA[org.testng.TestRunner@1494b84d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="188" started-at="2023-12-20T21:11:36 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-20T21:11:36 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="3452" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:58 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Create a user"]]>
+                <![CDATA["Check if the admin user is able to get users details(all users) obtained from external file successfully"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify the create user"]]>
+                <![CDATA["Feature to test the Get Details functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="tearDownClass" is-config="true" duration-ms="213" started-at="2023-12-20T21:11:36 IST" finished-at="2023-12-20T21:11:37 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="3452" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to get resource details(single resource) & request details passed from external file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="3089" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin user is able to delete user details obtained from external file successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Delete User functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="3454" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to get user details successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="3452" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to get resource details(list resource) & request details passed from external file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="2927" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin user doesn't get the details of a user who is not present & request details passed from external file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="2927" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user doesnt get the details of a resource which is not present & request details passed from external file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="3106" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to delete user details successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Delete User functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="3451" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to get user details(single user) obtained from external file successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="6069" started-at="2024-01-08T01:17:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:18:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to get users details with a delay in response obtained from external file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="1291" started-at="2024-01-08T01:17:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to do partial update of user details successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Partial Update of User details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="1271" started-at="2024-01-08T01:17:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin user is able do partial update of user details obtained from external file successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Partial Update of User details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="1120" started-at="2024-01-08T01:17:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin user is able to sent the dynamic request & do partial update of user details obtained from external file successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Partial Update of User details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="1118" started-at="2024-01-08T01:17:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin user is able to sent the request & do partial update of user details obtained from external file & java object successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Partial Update of User details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="792" started-at="2024-01-08T01:17:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to create a user successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="753" started-at="2024-01-08T01:17:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to create a user successfully with details obtained from external file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="729" started-at="2024-01-08T01:17:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to create a user successfully with details obtained from external file, request body is dynamic"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="754" started-at="2024-01-08T01:17:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to create a user successfully with details obtained from external file, request body as java object"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="725" started-at="2024-01-08T01:17:58 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to register a user successfully with details obtained from external file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="625" started-at="2024-01-08T01:17:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:18:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is not able to register a user with details obtained from external file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="591" started-at="2024-01-08T01:17:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:18:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the user is not able to login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Get Details functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="1149" started-at="2024-01-08T01:17:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:18:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if the admin user is able to update user details successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Update User functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="598" started-at="2024-01-08T01:17:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:18:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin user is able to update user details obtained from external file successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Update User functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="589" started-at="2024-01-08T01:17:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:18:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin user is able to sent the dynamic request & update user details obtained from external file successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Update User functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="runScenario" duration-ms="583" started-at="2024-01-08T01:17:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-08T01:18:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin user is able to sent the request & update user details obtained from external file & java object successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Feature to test the Update User functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="tearDownClass" is-config="true" duration-ms="114" started-at="2024-01-08T01:18:01 IST" finished-at="2024-01-08T01:18:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="afterSuite" is-config="true" duration-ms="3424" started-at="2023-12-20T21:11:37 IST" finished-at="2023-12-20T21:11:40 IST">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:runner.RunCucumberTest@5fdba6f9]" name="afterSuite" is-config="true" duration-ms="1104" started-at="2024-01-08T01:18:01 IST" finished-at="2024-01-08T01:18:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

@@ -1,0 +1,9 @@
+{
+	"requestType":"post",
+	"requestApiPath":"https://reqres.in/api/register",
+	"requestBody":
+				{
+					"#email": "%s,ram@gmail.com"
+				}
+				
+}

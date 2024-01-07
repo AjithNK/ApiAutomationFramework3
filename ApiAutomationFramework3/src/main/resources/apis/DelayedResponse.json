@@ -1,0 +1,5 @@
+{
+"requestType":"get",
+"requestApiPath":"https://reqres.in/api/users?delay=3"
+	
+}

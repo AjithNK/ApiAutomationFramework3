@@ -15,9 +15,7 @@ import com.google.gson.Gson;
 
 public class JsonProcessor {
 	
-	
-	
-	//This method is used to convert json object into json string
+	//This method will convert json object into json string
 	public static String jsonObjectToString(JSONObject jsonObj) {
 		
 		return jsonObj.toJSONString();
@@ -25,8 +23,7 @@ public class JsonProcessor {
 	}
 	
 	
-	
-	//This method is used to convert json string to json object
+	//This method will convert json string to json object
 	public static JSONObject stringToJsonObject(String inputString) {
 		
 		JSONObject jsonObj= new JSONObject();	
@@ -50,10 +47,8 @@ public class JsonProcessor {
 		
 	}
 	
-	
-	
 
-	//This method is used to read a json file from a particular location and then parse it to json object
+	//This method will read a json file from a particular location and then parse it to json object
 	public static JSONObject readFromJsonFile(String filePath) {
 		
 		JSONParser jsonParser = new JSONParser();
@@ -84,17 +79,19 @@ public class JsonProcessor {
 			e.printStackTrace(); 
 		}
 		
-	
-		
+
 		return jsonObject;
 		
 	}
 	
 	
-	//This method is used to convert json string to ObjectMap
+	//This method will convert json string to ObjectMap
 	public static HashMap<String, Object> getJsonAsObjectMap(String toJSONString) {
         HashMap<String,Object> objectMap = new Gson().fromJson(toJSONString, HashMap.class);
         return  objectMap;
     }
 
+	
+	
+	
 }
